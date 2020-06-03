@@ -33,4 +33,4 @@ int32_t main(){
 		cd(n,x);
 		cout<<n<<" "<<x<<endl;
 	}
-}
+} 
