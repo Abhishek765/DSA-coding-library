@@ -33,4 +33,6 @@ int32_t main(){
 		cd(n,x);
 		cout<<n<<" "<<x<<endl;
 	}
+
+return 0;
 } 
