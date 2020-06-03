@@ -15,6 +15,10 @@ using namespace std;
 #define inf         1e18
 #define ps(x,y)     fixed<<setprecision(y)<<x
 #define mka(arr,n,type)  type *arr = new type[n];
+<<<<<<< HEAD
+=======
+#define f(i,n) 	    for(int i;i<n;++i)
+>>>>>>> "added the template"
 #define cd(x,y) 	int x,y; cin>>x>>y;
 #define w(x) 		int x; cin>>x; while(x--)
 mt19937             rng(chrono::steady_clock::now().time_since_epoch().count()); //for shuffling of array
@@ -33,6 +37,11 @@ int32_t main(){
 		cd(n,x);
 		cout<<n<<" "<<x<<endl;
 	}
+<<<<<<< HEAD
 
 return 0;
 } 
+=======
+return 0;
+}
+>>>>>>> "added the template"
