@@ -32,30 +32,30 @@ void av()
 #endif
 }
 //iterative
-// string replacepi(string input)
-// {
-// 	int size;
-// 	size = input.length();
-// 	string output;
-// 	f(i, size)
-// 	{
-// 		if (i + 1 < size and input[i] == 'p' and input[i + 1] == 'i')
-// 		{
-// 			output += "3.14";
-// 			i++;
-// 		}
-// 		else
-// 		{
-// 			output += input[i];
-// 		}
-// 	}
-// 	return output;
-// }
+string replacepi(string input)
+{
+	int size;
+	size = input.length();
+	string output;
+	f(i, size)
+	{
+		if (i + 1 < size and input[i] == 'p' and input[i + 1] == 'i')
+		{
+			output += "3.14";
+			i++;
+		}
+		else
+		{
+			output += input[i];
+		}
+	}
+	return output;
+}
 
 //Recursive
-string replacepi(string input){
+// string replacepi(string input){
 
-}
+// }
 
 int32_t main()
 {
