@@ -15,8 +15,7 @@ using namespace std;
 #define inf         1e18
 #define ps(x,y)     fixed<<setprecision(y)<<x
 #define mka(arr,n,type)  type *arr = new type[n];
-
-#define f(i,n) 	    for(int i;i<n;++i)
+#define f(i,n)      for(int i= 0; i<n;++i)
 #define cd(x,y) 	int x,y; cin>>x>>y;
 #define w(x) 		int x; cin>>x; while(x--)
 mt19937             rng(chrono::steady_clock::now().time_since_epoch().count()); //for shuffling of array
@@ -28,17 +27,26 @@ void av(){
 	 freopen("output.txt", "w", stdout);
 	#endif
 }
+int* reverseArray(int a[], int i, int j){
+    if(i<j){
+        swap(a[i], a[j]);
+        reverseArray(a,i + 1, j - 1);
+    }
+    return a;
+}
 int32_t main(){
 	
     av();
-	w(t){
-		cd(n,x);
-		cout<<n<<" "<<x<<endl;
-	}
-<<<<<<< HEAD
+    int n; cin>>n;
+    mka(a,n,int);
+    mka(revArr,n,int);
+    f(i,n){
+        cin>>a[i];
+    }
+    revArr = reverseArray(a,0,n - 1);
 
-=======
->>>>>>> Added the Recursion file
-return 0;
-} 
-
+    f(i,n){
+        cout<< revArr[i]<<" ";
+    }
+    return 0;
+}
