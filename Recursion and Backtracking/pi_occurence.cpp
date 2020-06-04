@@ -21,20 +21,48 @@ using namespace std;
 #define w(x) 		int x; cin>>x; while(x--)
 mt19937             rng(chrono::steady_clock::now().time_since_epoch().count()); //for shuffling of array
 
-void av(){
-    ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-	#ifndef ONLINE_JUDGE
-	 freopen("input.txt", "r", stdin);
-	 freopen("output.txt", "w", stdout);
-	#endif
+void av()
+{
+	ios_base::sync_with_stdio(0);
+	cin.tie(0);
+	cout.tie(0);
+#ifndef ONLINE_JUDGE
+	freopen("input.txt", "r", stdin);
+	freopen("output.txt", "w", stdout);
+#endif
 }
-int32_t main(){
-	
-    av();
-	w(t){
-		cd(n,x);
-		cout<<n<<" "<<x<<endl;
-	}
-return 0;
-} 
+//iterative
+// string replacepi(string input)
+// {
+// 	int size;
+// 	size = input.length();
+// 	string output;
+// 	f(i, size)
+// 	{
+// 		if (i + 1 < size and input[i] == 'p' and input[i + 1] == 'i')
+// 		{
+// 			output += "3.14";
+// 			i++;
+// 		}
+// 		else
+// 		{
+// 			output += input[i];
+// 		}
+// 	}
+// 	return output;
+// }
 
+//Recursive
+string replacepi(string input){
+
+}
+
+int32_t main()
+{
+
+	av();
+	string input;
+	getline(cin, input);
+	cout << replacepi(input);
+	return 0;
+}
